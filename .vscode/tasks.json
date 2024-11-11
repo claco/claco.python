@@ -1,0 +1,38 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "inputs": [
+        {
+            "id": "output-dir",
+            "description": "cookiecutter --output-dir parameter",
+            "default": ".",
+            "type": "promptString"
+        }
+    ],
+    "tasks": [
+        {
+            "label": "New Project",
+            "detail": "create a new project",
+            "type": "shell",
+            "command": "make new-project output-dir=${input:output-dir}",
+            "presentation": {
+                "focus": true,
+                "panel": "new",
+                "showReuseMessage": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "New Default Project",
+            "detail": "create a new project using default settings",
+            "type": "shell",
+            "command": "make default-project output-dir=${input:output-dir}",
+            "presentation": {
+                "reveal": "silent",
+                "revealProblems": "onProblem",
+            },
+            "problemMatcher": []
+        }
+    ]
+}

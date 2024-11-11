@@ -1,0 +1,6 @@
+{
+    "project_name": "Python Project",
+    "project_slug": "{{ cookiecutter.project_name | slugify }}",
+    "python_script_name": "{{ cookiecutter.project_slug }}",
+    "python_module_name": "{{ cookiecutter.project_slug | replace('-', '_') }}"
+}

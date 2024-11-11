@@ -1,0 +1,15 @@
+[project]
+name = "claco.python"
+version = "0.0.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Christopher H. Laco", email = "claco@chrislaco.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "configargparse",
+    "fastapi[standard]",
+    "pytest",
+    "pytest-cov"
+]

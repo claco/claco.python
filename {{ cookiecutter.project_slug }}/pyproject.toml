@@ -1,0 +1,23 @@
+[project]
+name = "{{ cookiecutter.python_module_name }}"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Christopher H. Laco", email = "claco@chrislaco.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "click",
+    "cookiecutter",
+    "fastapi[standard]",
+    "pytest",
+    "pytest-cov"
+]
+
+[project.scripts]
+{{ cookiecutter.python_script_name }} = "{{ cookiecutter.python_module_name }}.cli:main"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"

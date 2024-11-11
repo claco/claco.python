@@ -1,0 +1,16 @@
+{
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "testing.showCoverageInExplorer": true,
+    "testing.openTesting": "neverOpen",
+    "ruff.lineLength": 119,
+    "[python]": {
+        "editor.rulers": [
+            119
+        ]
+    },
+    "testing.automaticallyOpenTestResults": "neverOpen"
+}
