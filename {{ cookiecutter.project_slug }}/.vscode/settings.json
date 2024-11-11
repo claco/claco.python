@@ -1,0 +1,9 @@
+{
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "testing.showCoverageInExplorer": true,
+    "testing.openTesting": "neverOpen"
+}
